@@ -12,8 +12,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script src="script.js?v=2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -28,6 +28,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#how-it-works">How it works</a>
         <a href="#use-cases">Where it helps</a>
+        <a href="support.html">Support</a>
         <a class="nav-cta" href="#availability">Get updates</a>
       </nav>
     </header>
@@ -39,7 +40,7 @@
           <h1>Everyone can <em>hear now.</em></h1>
           <p class="hero-text">Use one phone as a microphone and nearby phones as speakers. No special equipment. No complicated setup.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#availability">Join the early list <span aria-hidden="true">→</span></a>
+            <a class="button button-primary" href="#availability">Tell me when it's ready <span aria-hidden="true">→</span></a>
             <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
           </div>
           <ul class="hero-notes" aria-label="Product benefits">
@@ -153,8 +154,16 @@
         <div>
           <p class="eyebrow light">Amprov is coming soon</p>
           <h2>Less equipment.<br><em>More connection.</em></h2>
-          <p>Amprov is in early development. Follow the project on GitHub to hear when the MVP is ready.</p>
-          <a class="button button-light" href="https://github.com/cwhite616/amprov.com">Follow on GitHub <span aria-hidden="true">→</span></a>
+          <p>Amprov is in early development. Leave your email and we'll tell you when the MVP is ready.</p>
+          <form class="interest-form" action="https://script.google.com/macros/s/AKfycbzHpv-q3PaJ7A8omAG0WsLVrrAjVRnxPwNHCYxzeUTFLCRfQChzuvlJpnMk5OpnmCfG/exec" method="POST" data-async-form>
+            <input type="hidden" name="formType" value="interest">
+            <label class="sr-only" for="interest-email">Email address</label>
+            <div class="inline-form-fields">
+              <input id="interest-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <button class="button button-light" type="submit">Tell me when it's ready <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="form-status form-status-light" data-form-status aria-live="polite"></p>
+          </form>
         </div>
         <div class="availability-art" aria-hidden="true">
           <div class="center-mic">
@@ -176,6 +185,7 @@
       </a>
       <p>Everyone can hear now.</p>
       <div class="footer-links">
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="https://github.com/cwhite616/amprov.com">GitHub</a>
       </div>
